@@ -8,3 +8,5 @@ model/*png
 *.jar
 *.war
 *.ear
+
+*.java~
