@@ -1,1 +1,10 @@
+classes/
+lib/
+model/*png
 *.class
+*.DS_Store
+
+# Package files #
+*.jar
+*.war
+*.ear
