@@ -47,7 +47,7 @@ public class FileDemoMain{
     
     try{
       isReadme = new FileInputStream(readme);
-      isrReadme = new InputStreamReader(isReadme,"UTF8");
+      isrReadme = new InputStreamReader(isReadme,"euc-kr");
       brReadme = new BufferedReader(isrReadme);
       while((str=brReadme.readLine())!=null){
         System.out.println("--"+str);
