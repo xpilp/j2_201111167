@@ -1,11 +1,13 @@
-package headfirst.singleton.chocolate;
+package headfirst.singleton.threadsafe;
  
 public class ChocolateBoiler {
 
  private static ChocolateBoiler uniqueInstance;
         private static int numCalled=0; 
+        
+        private ChocolateBoiler() { }
    
- public static ChocolateBoiler getInstance() {
+ public static synchronized ChocolateBoiler getInstance() {
   if (uniqueInstance == null) {
    System.out.println("Creating unique instance of Chocolate Boiler");
    uniqueInstance = new ChocolateBoiler();
