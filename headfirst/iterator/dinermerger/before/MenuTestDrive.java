@@ -22,5 +22,5 @@ public class MenuTestDrive {
             System.out.println("\t\t" + menuItem.getPrice());
             System.out.println("\t" + menuItem.getDescription());
         }
-    
+    }
 }
