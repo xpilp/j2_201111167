@@ -6,12 +6,6 @@ public class MenuTestDrive {
     public static void main(String args[]) {
     PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
     DinerMenu dinerMenu = new DinerMenu();
- 
-    printMenu();
-    }
-    public static void printMenu() {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
 
         ArrayList<MenuItem> breakfastItems = pancakeHouseMenu.getMenuItems();
 
@@ -28,5 +22,5 @@ public class MenuTestDrive {
             System.out.println("\t\t" + menuItem.getPrice());
             System.out.println("\t" + menuItem.getDescription());
         }
-    }
+    
 }
